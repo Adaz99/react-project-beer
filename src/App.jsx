@@ -21,8 +21,8 @@ function App() {
     <div>
     <h1>Beer api</h1>
     <div>
-    < NavBar handleInput={handleInput} searchTerm={searchTerm} />
-    <Main beers={beers}/>
+    <NavBar handleInput={handleInput} searchTerm={searchTerm}  />
+    <Main beers={filtered} />
     </div>
     </div>
   );
