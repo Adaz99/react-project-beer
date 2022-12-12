@@ -1,10 +1,10 @@
 import "./main.scss";
 import BeerCard from "../beerCard/beerCard"
 
-const Main = ({ beers }) => {
+const Main = ({ beers, apiList }) => {
   return (
     <div>
-      <BeerCard beers={beers} />
+      <BeerCard beers={beers} apiList={apiList} />
     </div>
   );
 };

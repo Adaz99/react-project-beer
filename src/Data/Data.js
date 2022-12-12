@@ -717,4 +717,5 @@ const beers = [
     }
 ];
 
+
 export default beers;

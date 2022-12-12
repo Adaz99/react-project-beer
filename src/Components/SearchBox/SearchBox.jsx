@@ -2,7 +2,7 @@ import "./SearchBox.scss"
 
 const SearchBox = (props) => {
     
-    const { handleInput, } = props
+    const { handleInput } = props
 
 
     return (
