@@ -5,9 +5,9 @@ const filterButtons = (props) => {
   return (
     <div className="Buttons">
       <p>Click The Buttons To Filter Through!</p>
-      <button onClick={handleOnClick}> High Abv 6% </button>
-      <button onClick={handleOnClick}> Classic Range</button>
-      <button onClick={handleOnClick}> Acidic </button>
+      <button className="myButton" onClick={handleOnClick}> High Abv 6% </button>
+      <button className="myButton" onClick={handleOnClick}> Classic Range</button>
+      <button className="myButton" onClick={handleOnClick}> Acidic </button>
       
     </div>
   );

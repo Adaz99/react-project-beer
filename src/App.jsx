@@ -7,7 +7,6 @@ import { useState, useEffect } from "react";
 function App() {
   const [searchTerm, setSearchTerm] = useState("");
   const [beerList, setBeerList] = useState([]);
-
   const [AbvAlchohol, setAbvAlcohol] = useState(0);
   const [ClassicRange, setClassicRange] = useState(2022);
 
