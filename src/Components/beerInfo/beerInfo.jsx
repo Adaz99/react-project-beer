@@ -10,7 +10,7 @@ const BeerInfo = (props) => {
       <img className="beer__img" src={image} alt="" />
       </div>
       <h1>{name}</h1>
-      <p>{description}</p>
+      <p className="beer_des">{description}</p>
       <div className="beer__info">
       <p>First brewed: {first_brewed}</p>
       <p>abv: {abv}%</p>

@@ -45,7 +45,7 @@ function App() {
     return setClassicRange(2022)
     if (event.target.innerText === "Acidic" ) {
       return filteracidy();
-    } else if (event.target.innerText === "Acidic" && filteracidy <= 4 ){
+    } else if (event.target.innerText === "Acidic" && filteracidy === 0 ){
       return setBeerList()
     }
   };

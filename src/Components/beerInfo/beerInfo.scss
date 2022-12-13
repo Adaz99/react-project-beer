@@ -5,19 +5,39 @@
     flex-wrap: wrap;
     border: solid 2px black;
     text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
 
     &__img {
       width: 20%;
       height: 25%;
-      size: 5%;
       padding-top: 20px;
     }
 
-    &__info{
-        font-weight: bold;
+    &__info {
+      font-weight: bold;
+    }
+    &_des{
+        font-style: italic;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .beer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+
+    &__img {
+      width: 20%;
+      height: 90%;
+      padding-top: 20px;
+    }
+    &_des{
+        font-style: italic;
     }
   }
 }
-@media screen and (min-width: 1024px){
-    
 }

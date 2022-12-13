@@ -4,7 +4,7 @@ import BeerCard from "../beerCard/beerCard"
 
 const Main = ({ beers, apiList }) => {
   return (
-    <div>
+    <div className="beerCard">
       <BeerCard beers={beers} apiList={apiList} />
     </div>
   );
