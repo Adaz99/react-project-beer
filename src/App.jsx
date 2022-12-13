@@ -34,9 +34,10 @@ function App() {
   };
 
   const handleOnClick = (event) => {
-    if (event.target.innerText === "High Abv 6%") {
+    if (event.target.innerText === "High Abv 6%" && AbvAlchohol === 0) {
       return setAbvAlcohol(6);
-    } 
+    } else if (event.target.innerText === "High Abv 6%" && AbvAlchohol === 6)
+    return setAbvAlcohol(0)
     if (event.target.innerText === "Classic Range") {
       return setClassicRange(2010);
     }

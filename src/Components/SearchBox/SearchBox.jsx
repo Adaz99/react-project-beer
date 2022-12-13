@@ -6,8 +6,8 @@ const SearchBox = (props) => {
 
 
     return (
-        <form >
-          <input className="search-box"
+        <form className="search-box">
+          <input 
             type="text"
             onChange={handleInput}
           />
