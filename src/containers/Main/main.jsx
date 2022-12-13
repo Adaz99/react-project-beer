@@ -1,5 +1,5 @@
 import "./main.scss";
-import BeerCard from "../../../Components/beerCard/beerCard";
+import BeerCard from "../../Components/beerCard/beerCard";
 
 const Main = ({ beers, apiList }) => {
   return (
