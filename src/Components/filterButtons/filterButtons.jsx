@@ -3,7 +3,7 @@ import "./filterButtons.scss";
 const filterButtons = (props) => {
   const { handleOnClick } = props;
   return (
-    <div>
+    <div className="Buttons">
       <p>Click The Buttons To Filter Through!</p>
       <button onClick={handleOnClick}> High Abv 6% </button>
       <button onClick={handleOnClick}> Classic Range</button>

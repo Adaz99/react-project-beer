@@ -11,9 +11,9 @@ const BeerInfo = (props) => {
       </div>
       <h1>{name}</h1>
       <p>{description}</p>
-      <div>
+      <div className="beer__info">
       <p>First brewed: {first_brewed}</p>
-      <p>abv: {abv}</p>
+      <p>abv: {abv}%</p>
       <p>ph: {ph}</p>
       </div>
     </div>

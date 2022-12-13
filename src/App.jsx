@@ -10,6 +10,7 @@ function App() {
 
   const [AbvAlchohol, setAbvAlcohol] = useState(0);
   const [ClassicRange, setClassicRange] = useState(2022);
+  
 
   const handleInput = (event) => {
     const cleanInput = event.target.value.toLowerCase();
@@ -38,11 +39,14 @@ function App() {
       return setAbvAlcohol(6);
     } else if (event.target.innerText === "High Abv 6%" && AbvAlchohol === 6)
     return setAbvAlcohol(0)
-    if (event.target.innerText === "Classic Range") {
+    if (event.target.innerText === "Classic Range" && ClassicRange === 2022) {
       return setClassicRange(2010);
-    }
-    if (event.target.innerText === "Acidic") {
+    }else if (event.target.innerText === "Classic Range" && ClassicRange === 2010)
+    return setClassicRange(2022)
+    if (event.target.innerText === "Acidic" ) {
       return filteracidy();
+    } else if (event.target.innerText === "Acidic" && filteracidy <= 4 ){
+      return setBeerList()
     }
   };
 

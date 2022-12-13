@@ -1,19 +1,23 @@
 @media screen and (min-width: 320px) {
-.beer{
-    
-        flex-direction: row;
-        justify-content: center;
-        flex-wrap: wrap;
-        border: solid 2px black;
-        text-align: center;
+  .beer {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    border: solid 2px black;
+    text-align: center;
 
-  &__img{
-    width: 20%;
-    height: 25%;
-    size: 5%;
-   
-    
-}
-}
+    &__img {
+      width: 20%;
+      height: 25%;
+      size: 5%;
+      padding-top: 20px;
+    }
 
+    &__info{
+        font-weight: bold;
+    }
+  }
+}
+@media screen and (min-width: 1024px){
+    
 }
