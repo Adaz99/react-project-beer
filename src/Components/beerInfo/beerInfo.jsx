@@ -6,8 +6,10 @@ const BeerInfo = (props) => {
 
   return (
     <div className="beer">
-      <h1>{name}</h1>
+      <div>
       <img className="beer__img" src={image} alt="" />
+      </div>
+      <h1>{name}</h1>
       <p>{description}</p>
       <div>
       <p>First brewed: {first_brewed}</p>

@@ -10,7 +10,6 @@ function App() {
 
   const [AbvAlchohol, setAbvAlcohol] = useState(0);
   const [ClassicRange, setClassicRange] = useState(2022);
-  const [Acidic, setAcidic] = useState(0);
 
   const handleInput = (event) => {
     const cleanInput = event.target.value.toLowerCase();
@@ -19,36 +18,32 @@ function App() {
   const filtered = beerList.filter((beer) => {
     const beerLowerCase = beer.name.toLowerCase();
     return beerLowerCase.includes(searchTerm);
-  
   });
 
   const getBeers = async (AbvAlchohol, ClassicRange) => {
-    const url = `https://api.punkapi.com/v2/beers?abv_gt=${AbvAlchohol}&brewed_before=11-${ClassicRange}`;
+    const url = `https://api.punkapi.com/v2/beers?abv_gt=${AbvAlchohol}&brewed_before=11-${ClassicRange}&per_page=80`;
     const result = await fetch(url);
     const beerData = await result.json();
     setBeerList(beerData);
     // console.log(beerList)
   };
 
-  const filterAcidic = (beersList) => {
-    return beersList.filter((beer) => beer.ph < 4)
-  
-}
+  const filteracidy = () => {
+    const phs = beerList.filter((beers) => beers.ph < 4);
+    setBeerList(phs);
+  };
 
   const handleOnClick = (event) => {
     if (event.target.innerText === "High Abv 6%") {
       return setAbvAlcohol(6);
-    }
+    } 
     if (event.target.innerText === "Classic Range") {
       return setClassicRange(2010);
     }
     if (event.target.innerText === "Acidic") {
-      return filterAcidic();
+      return filteracidy();
     }
   };
-  console.log(filterAcidic)
-
- 
 
   useEffect(() => {
     getBeers(AbvAlchohol, ClassicRange);
@@ -56,7 +51,7 @@ function App() {
 
   return (
     <div>
-      <h1>Beer api</h1>
+      <h1>Beer API</h1>
       <div>
         <NavBar
           handleInput={handleInput}
