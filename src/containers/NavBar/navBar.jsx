@@ -4,7 +4,7 @@ import FilterButtons from "../../Components/filterButtons/filterButtons";
 
 const NavBar = ({ handleInput, searchTerm, handleOnClick }) => {
   return (
-    <div>
+    <div className="navBar">
       <SearchBox handleInput={handleInput} searchTerm={searchTerm} />
       <FilterButtons handleOnClick={handleOnClick} />
     </div>

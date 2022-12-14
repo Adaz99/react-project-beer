@@ -7,3 +7,5 @@ it("should display the heading with the correct text", () => {
   const heading = screen.getByText(/Beer API/i);
   expect(heading).toBeInTheDocument();
 });
+
+
