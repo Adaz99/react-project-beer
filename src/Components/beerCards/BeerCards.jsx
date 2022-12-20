@@ -2,7 +2,7 @@ import "./BeerCard.scss";
 import BeerInfo from "../beerInfo/BeerInfo";
 
 const BeerCard = (props) => {
-  const { beers, apiList } = props;
+  const { apiList } = props;
   // && is used to displayed the data when it is ready
   return (
     apiList &&

@@ -2,6 +2,7 @@ import "./FilterButtons.scss";
 
 const FilterButtons = (props) => {
   const { handleOnClick } = props;
+  
   return (
     <div className="Buttons">
       <p>Click The Buttons To Filter Through!</p>

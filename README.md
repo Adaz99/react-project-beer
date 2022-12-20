@@ -1,0 +1,1 @@
+Built a Beer API which allows you to filter through different beers either by searching or clicking the filter buttons, using React and connecting it to the PunkAPI 
