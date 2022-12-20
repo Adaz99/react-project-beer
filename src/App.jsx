@@ -26,7 +26,7 @@ function App() {
     const result = await fetch(url);
     const beerData = await result.json();
     setBeerList(beerData);
-    // console.log(beerList)
+    console.log(beerList)
   };
  // filters the beerList to only show beers with a pH level less than 4
   const filteracidy = () => {
