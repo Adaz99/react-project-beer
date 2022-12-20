@@ -1,6 +1,6 @@
-import "./navBar.scss";
-import SearchBox from "../../Components/SearchBox/SearchBox"
-import FilterButtons from "../../Components/filterButtons/filterButtons";
+import "./NavBar.scss";
+import SearchBox from "../../components/searchBox/SearchBox"
+import FilterButtons from "../../components/filterButtons/FilterButtons";
 
 const NavBar = ({ handleInput, searchTerm, handleOnClick }) => {
   return (

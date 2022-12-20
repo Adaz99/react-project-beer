@@ -1,4 +1,4 @@
-import "./beerInfo.scss";
+import "./BeerInfo.scss";
 
 
 const BeerInfo = (props) => {

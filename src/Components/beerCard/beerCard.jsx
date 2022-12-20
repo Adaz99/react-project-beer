@@ -1,5 +1,5 @@
-import "./beerCard.scss";
-import BeerInfo from "../beerInfo/beerInfo";
+import "./BeerCard.scss";
+import BeerInfo from "../beerInfo/BeerInfo";
 
 const BeerCard = (props) => {
   const { beers, apiList } = props;

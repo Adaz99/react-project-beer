@@ -1,7 +1,7 @@
 import "./App.scss";
 import "./App.css";
-import Main from "./containers/Main/main";
-import NavBar from "./containers/NavBar/navBar";
+import Main from "./containers/main/Main";
+import NavBar from "./containers/navBar/NavBar";
 import { useState, useEffect } from "react";
 
 function App() {

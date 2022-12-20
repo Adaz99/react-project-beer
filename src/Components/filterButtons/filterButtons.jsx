@@ -1,6 +1,6 @@
-import "./filterButtons.scss";
+import "./FilterButtons.scss";
 
-const filterButtons = (props) => {
+const FilterButtons = (props) => {
   const { handleOnClick } = props;
   return (
     <div className="Buttons">
@@ -13,4 +13,4 @@ const filterButtons = (props) => {
   );
 };
 
-export default filterButtons;
+export default FilterButtons;
