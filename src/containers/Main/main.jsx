@@ -1,5 +1,5 @@
 import "./Main.scss";
-import BeerCard from "../../components/beerCards/BeerCards";
+import BeerCard from "../../components/BeerCards/BeerCards";
 
 //The Main component takes in two props beers and apiList
 const Main = ({ beers, apiList }) => {

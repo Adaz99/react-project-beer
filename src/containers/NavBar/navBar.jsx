@@ -1,12 +1,12 @@
 import "./NavBar.scss";
-import SearchBox from "../../components/searchBox/SearchBox"
-import FilterButtons from "../../components/filterButtons/FilterButtons";
+import SearchBox from "../../components/SearchBox/SearchBox"
+import FilterButtons from "../../components/FilterButtons/FilterButtons";
 
-const NavBar = ({ handleInput, searchTerm, handleOnClick }) => {
+const NavBar = ({ handleInput, searchTerm, handleOnClick, abvButton, classicButton, acidButton }) => {
   return (
     <div className="navBar">
       <SearchBox handleInput={handleInput} searchTerm={searchTerm} />
-      <FilterButtons handleOnClick={handleOnClick} />
+      <FilterButtons handleOnClick={handleOnClick} abvButton={abvButton} classicButton={classicButton} acidButton={acidButton}/>
     </div>
   );
 };
