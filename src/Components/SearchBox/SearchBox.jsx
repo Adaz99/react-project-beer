@@ -7,7 +7,7 @@ const SearchBox = (props) => {
 
     return (
         <form className="search-box">
-          <p>Search Beers!</p>
+          <p>Search For Beers! 🍻</p>
           <input 
             type="text"
             onChange={handleInput}
