@@ -19,10 +19,14 @@ function App() {
     setSearchTerm(cleanInput);
   };
   // filter the beerList based on the current searchTerm
-  const filtered = beerList.filter((beer) => {
+  let filtered = beerList.filter((beer) => {
     const beerLowerCase = beer.name.toLowerCase();
     return beerLowerCase.includes(searchTerm);
   });
+
+  if (acidity){
+   filtered = filtered.filter((beers) => beers.ph < 4);
+  }
   //get beersfunction that uses the AbvAlchohol and ClassicRange variables to fetch a list of beers from an API, and then updates the beerList variable with the result
   const getBeers = async (AbvAlchohol, ClassicRange) => {
     const url = `https://api.punkapi.com/v2/beers?abv_gt=${AbvAlchohol}&brewed_before=11-${ClassicRange}&per_page=80`;
@@ -32,10 +36,10 @@ function App() {
     setOriginalBeerList(beerData)
   };
   // filters the beerList to only show beers with a pH level less than 4
-  const filteracidy = () => {
-    const phs = beerList.filter((beers) => beers.ph < 4);
-    setBeerList(phs);
-  };
+  // const filteracidy = () => {
+  //   const phs = beerList.filter((beers) => beers.ph < 4);
+  //   setBeerList(phs);
+  // };
   // called when the user clicks one of the buttons in the NavBar component. It updates the AbvAlchohol and ClassicRange and state variables based on which button was clicked
   // and displayed the filtered items on screen
   const handleOnClick = (event) => {
@@ -57,7 +61,6 @@ function App() {
         setBeerList(originalBeerList);
         setAcidity(false);  // set acidity to false
       } else {  // if acidity is false, apply the filter and set acidity to true
-        filteracidy();
         setAcidity(true);
       }
     }
