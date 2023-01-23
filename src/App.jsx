@@ -40,7 +40,7 @@ function App() {
   //   const phs = beerList.filter((beers) => beers.ph < 4);
   //   setBeerList(phs);
   // };
-  // called when the user clicks one of the buttons in the NavBar component. It updates the AbvAlchohol and ClassicRange and state variables based on which button was clicked
+  // called when the user clicks one of the buttons in the NavBar component. It updates the AbvAlchohol and ClassicRange and state variables based on which button was click
   // and displayed the filtered items on screen
   const handleOnClick = (event) => {
     //If the inner text of the clicked element is "High Abv 6%"
